@@ -8,6 +8,7 @@
         SplashScreenBar.Value = valueP
         If (SplashScreenBar.Value = 100) Then
             Timer1.Stop()
+            Me.Hide()
             LogInScreen.Show()
 
         Else

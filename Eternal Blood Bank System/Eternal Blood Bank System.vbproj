@@ -83,6 +83,12 @@
     <Compile Include="LogInScreen.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SignUpScreen.Designer.vb">
+      <DependentUpon>SignUpScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
   <ItemGroup>
     <EmbeddedResource Include="LogInScreen.resx">
       <DependentUpon>LogInScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpScreen.resx">
+      <DependentUpon>SignUpScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>

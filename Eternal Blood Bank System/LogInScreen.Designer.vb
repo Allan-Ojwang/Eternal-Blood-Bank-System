@@ -24,21 +24,22 @@ Partial Class LogInScreen
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LogInScreen))
-        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.LogInCorners = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.BunifuMetroTextbox1 = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.UsernameTextbox = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuMetroTextbox2 = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.PasswordTextbox = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.LogInButton = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.SignUpBtn = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'BunifuElipse1
+        'LogInCorners
         '
-        Me.BunifuElipse1.ElipseRadius = 20
-        Me.BunifuElipse1.TargetControl = Me
+        Me.LogInCorners.ElipseRadius = 20
+        Me.LogInCorners.TargetControl = Me
         '
         'PictureBox1
         '
@@ -50,24 +51,23 @@ Partial Class LogInScreen
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'BunifuMetroTextbox1
+        'UsernameTextbox
         '
-        Me.BunifuMetroTextbox1.BackColor = System.Drawing.Color.White
-        Me.BunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.Transparent
-        Me.BunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox1.BorderThickness = 3
-        Me.BunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.BunifuMetroTextbox1.ForeColor = System.Drawing.Color.White
-        Me.BunifuMetroTextbox1.isPassword = False
-        Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(566, 189)
-        Me.BunifuMetroTextbox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox1.Name = "BunifuMetroTextbox1"
-        Me.BunifuMetroTextbox1.Size = New System.Drawing.Size(322, 40)
-        Me.BunifuMetroTextbox1.TabIndex = 2
-        Me.BunifuMetroTextbox1.Text = "BunifuMetroTextbox1"
-        Me.BunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.UsernameTextbox.BackColor = System.Drawing.Color.White
+        Me.UsernameTextbox.BorderColorFocused = System.Drawing.Color.Blue
+        Me.UsernameTextbox.BorderColorIdle = System.Drawing.Color.Transparent
+        Me.UsernameTextbox.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.UsernameTextbox.BorderThickness = 3
+        Me.UsernameTextbox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.UsernameTextbox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.UsernameTextbox.ForeColor = System.Drawing.Color.White
+        Me.UsernameTextbox.isPassword = False
+        Me.UsernameTextbox.Location = New System.Drawing.Point(566, 189)
+        Me.UsernameTextbox.Margin = New System.Windows.Forms.Padding(4)
+        Me.UsernameTextbox.Name = "UsernameTextbox"
+        Me.UsernameTextbox.Size = New System.Drawing.Size(322, 40)
+        Me.UsernameTextbox.TabIndex = 2
+        Me.UsernameTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel1
         '
@@ -91,72 +91,86 @@ Partial Class LogInScreen
         Me.BunifuCustomLabel2.TabIndex = 5
         Me.BunifuCustomLabel2.Text = "Password"
         '
-        'BunifuMetroTextbox2
+        'PasswordTextbox
         '
-        Me.BunifuMetroTextbox2.BackColor = System.Drawing.Color.White
-        Me.BunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.Transparent
-        Me.BunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox2.BorderThickness = 3
-        Me.BunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox2.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.BunifuMetroTextbox2.ForeColor = System.Drawing.Color.White
-        Me.BunifuMetroTextbox2.isPassword = False
-        Me.BunifuMetroTextbox2.Location = New System.Drawing.Point(566, 331)
-        Me.BunifuMetroTextbox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox2.Name = "BunifuMetroTextbox2"
-        Me.BunifuMetroTextbox2.Size = New System.Drawing.Size(322, 40)
-        Me.BunifuMetroTextbox2.TabIndex = 4
-        Me.BunifuMetroTextbox2.Text = "BunifuMetroTextbox2"
-        Me.BunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.PasswordTextbox.BackColor = System.Drawing.Color.White
+        Me.PasswordTextbox.BorderColorFocused = System.Drawing.Color.Blue
+        Me.PasswordTextbox.BorderColorIdle = System.Drawing.Color.Transparent
+        Me.PasswordTextbox.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.PasswordTextbox.BorderThickness = 3
+        Me.PasswordTextbox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.PasswordTextbox.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.PasswordTextbox.ForeColor = System.Drawing.Color.White
+        Me.PasswordTextbox.isPassword = False
+        Me.PasswordTextbox.Location = New System.Drawing.Point(566, 331)
+        Me.PasswordTextbox.Margin = New System.Windows.Forms.Padding(4)
+        Me.PasswordTextbox.Name = "PasswordTextbox"
+        Me.PasswordTextbox.Size = New System.Drawing.Size(322, 40)
+        Me.PasswordTextbox.TabIndex = 4
+        Me.PasswordTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'BunifuFlatButton1
+        'LogInButton
         '
-        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.LogInButton.Activecolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.LogInButton.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = "Log In"
-        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton1.Iconimage = Nothing
-        Me.BunifuFlatButton1.Iconimage_right = Nothing
-        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton1.IconMarginLeft = 0
-        Me.BunifuFlatButton1.IconMarginRight = 0
-        Me.BunifuFlatButton1.IconRightVisible = True
-        Me.BunifuFlatButton1.IconRightZoom = 0R
-        Me.BunifuFlatButton1.IconVisible = True
-        Me.BunifuFlatButton1.IconZoom = 90.0R
-        Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(566, 429)
-        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(77, Byte), Integer))
-        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(322, 31)
-        Me.BunifuFlatButton1.TabIndex = 6
-        Me.BunifuFlatButton1.Text = "Log In"
-        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.Black
-        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LogInButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.LogInButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.LogInButton.BorderRadius = 0
+        Me.LogInButton.ButtonText = "Log In"
+        Me.LogInButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LogInButton.DisabledColor = System.Drawing.Color.Gray
+        Me.LogInButton.Iconcolor = System.Drawing.Color.Transparent
+        Me.LogInButton.Iconimage = Nothing
+        Me.LogInButton.Iconimage_right = Nothing
+        Me.LogInButton.Iconimage_right_Selected = Nothing
+        Me.LogInButton.Iconimage_Selected = Nothing
+        Me.LogInButton.IconMarginLeft = 0
+        Me.LogInButton.IconMarginRight = 0
+        Me.LogInButton.IconRightVisible = True
+        Me.LogInButton.IconRightZoom = 0R
+        Me.LogInButton.IconVisible = True
+        Me.LogInButton.IconZoom = 90.0R
+        Me.LogInButton.IsTab = False
+        Me.LogInButton.Location = New System.Drawing.Point(566, 429)
+        Me.LogInButton.Name = "LogInButton"
+        Me.LogInButton.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.LogInButton.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.LogInButton.OnHoverTextColor = System.Drawing.Color.Black
+        Me.LogInButton.selected = False
+        Me.LogInButton.Size = New System.Drawing.Size(322, 31)
+        Me.LogInButton.TabIndex = 6
+        Me.LogInButton.Text = "Log In"
+        Me.LogInButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LogInButton.Textcolor = System.Drawing.Color.Black
+        Me.LogInButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'BunifuCustomLabel3
+        'SignUpBtn
         '
-        Me.BunifuCustomLabel3.AutoSize = True
-        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Cambria", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(592, 502)
-        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
-        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(256, 28)
-        Me.BunifuCustomLabel3.TabIndex = 7
-        Me.BunifuCustomLabel3.Text = "Dont't have an account?"
+        Me.SignUpBtn.AutoSize = True
+        Me.SignUpBtn.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SignUpBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.SignUpBtn.Location = New System.Drawing.Point(583, 498)
+        Me.SignUpBtn.Name = "SignUpBtn"
+        Me.SignUpBtn.Size = New System.Drawing.Size(292, 22)
+        Me.SignUpBtn.TabIndex = 7
+        Me.SignUpBtn.Text = "Dont't have an account? Click Here." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'BunifuGradientPanel1
+        '
+        Me.BunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.BunifuGradientPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
+        Me.BunifuGradientPanel1.Quality = 10
+        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(980, 40)
+        Me.BunifuGradientPanel1.TabIndex = 8
         '
         'LogInScreen
         '
@@ -164,12 +178,13 @@ Partial Class LogInScreen
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(980, 625)
-        Me.Controls.Add(Me.BunifuCustomLabel3)
-        Me.Controls.Add(Me.BunifuFlatButton1)
+        Me.Controls.Add(Me.BunifuGradientPanel1)
+        Me.Controls.Add(Me.SignUpBtn)
+        Me.Controls.Add(Me.LogInButton)
         Me.Controls.Add(Me.BunifuCustomLabel2)
-        Me.Controls.Add(Me.BunifuMetroTextbox2)
+        Me.Controls.Add(Me.PasswordTextbox)
         Me.Controls.Add(Me.BunifuCustomLabel1)
-        Me.Controls.Add(Me.BunifuMetroTextbox1)
+        Me.Controls.Add(Me.UsernameTextbox)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "LogInScreen"
@@ -181,12 +196,13 @@ Partial Class LogInScreen
 
     End Sub
 
-    Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents LogInCorners As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
-    Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents UsernameTextbox As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents LogInButton As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuMetroTextbox2 As Bunifu.Framework.UI.BunifuMetroTextbox
-    Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents PasswordTextbox As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents SignUpBtn As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
 End Class
