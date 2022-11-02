@@ -23,24 +23,13 @@ Partial Class SplashScreen
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LoadTxt = New System.Windows.Forms.Label()
         Me.SplashScreenBar = New Bunifu.Framework.UI.BunifuProgressBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SplashScreenCorners = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(197, 86)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(617, 307)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'LoadTxt
         '
@@ -74,6 +63,16 @@ Partial Class SplashScreen
         '
         Me.SplashScreenCorners.ElipseRadius = 20
         Me.SplashScreenCorners.TargetControl = Me
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.Logo
+        Me.PictureBox1.Location = New System.Drawing.Point(197, 86)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(617, 307)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'SplashScreen
         '

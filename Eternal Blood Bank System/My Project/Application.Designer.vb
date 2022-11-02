@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Eternal_Blood_Bank_System.SplashScreen
+            Me.MainForm = Global.Eternal_Blood_Bank_System.LogInScreen
         End Sub
     End Class
 End Namespace
