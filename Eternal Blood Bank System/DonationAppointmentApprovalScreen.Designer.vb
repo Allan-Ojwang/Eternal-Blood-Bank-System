@@ -1,0 +1,128 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class DonationAppointmentApprovalScreen
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.BackElipse = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.backBtn = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.ApproveButton = New Bunifu.Framework.UI.BunifuFlatButton()
+        CType(Me.backBtn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'BunifuElipse1
+        '
+        Me.BunifuElipse1.ElipseRadius = 20
+        Me.BunifuElipse1.TargetControl = Me
+        '
+        'BackElipse
+        '
+        Me.BackElipse.ElipseRadius = 5
+        Me.BackElipse.TargetControl = Me.backBtn
+        '
+        'backBtn
+        '
+        Me.backBtn.BackColor = System.Drawing.Color.Black
+        Me.backBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.backBtn.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.go_back
+        Me.backBtn.ImageActive = Nothing
+        Me.backBtn.Location = New System.Drawing.Point(12, 12)
+        Me.backBtn.Name = "backBtn"
+        Me.backBtn.Size = New System.Drawing.Size(52, 52)
+        Me.backBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.backBtn.TabIndex = 3
+        Me.backBtn.TabStop = False
+        Me.backBtn.Zoom = 10
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(82, 104)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(871, 476)
+        Me.DataGridView1.TabIndex = 4
+        '
+        'ApproveButton
+        '
+        Me.ApproveButton.Activecolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.ApproveButton.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ApproveButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.ApproveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ApproveButton.BorderRadius = 0
+        Me.ApproveButton.ButtonText = "Approve"
+        Me.ApproveButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ApproveButton.DisabledColor = System.Drawing.Color.Gray
+        Me.ApproveButton.Iconcolor = System.Drawing.Color.Transparent
+        Me.ApproveButton.Iconimage = Nothing
+        Me.ApproveButton.Iconimage_right = Nothing
+        Me.ApproveButton.Iconimage_right_Selected = Nothing
+        Me.ApproveButton.Iconimage_Selected = Nothing
+        Me.ApproveButton.IconMarginLeft = 0
+        Me.ApproveButton.IconMarginRight = 0
+        Me.ApproveButton.IconRightVisible = True
+        Me.ApproveButton.IconRightZoom = 0R
+        Me.ApproveButton.IconVisible = True
+        Me.ApproveButton.IconZoom = 90.0R
+        Me.ApproveButton.IsTab = False
+        Me.ApproveButton.Location = New System.Drawing.Point(647, 32)
+        Me.ApproveButton.Name = "ApproveButton"
+        Me.ApproveButton.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.ApproveButton.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.ApproveButton.OnHoverTextColor = System.Drawing.Color.Black
+        Me.ApproveButton.selected = False
+        Me.ApproveButton.Size = New System.Drawing.Size(152, 32)
+        Me.ApproveButton.TabIndex = 64
+        Me.ApproveButton.Text = "Approve"
+        Me.ApproveButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ApproveButton.Textcolor = System.Drawing.Color.Black
+        Me.ApproveButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'DonationAppointmentApprovalScreen
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1020, 635)
+        Me.Controls.Add(Me.ApproveButton)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.backBtn)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "DonationAppointmentApprovalScreen"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "DonationAppointmentApprovalScreen"
+        CType(Me.backBtn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+
+    Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents backBtn As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents BackElipse As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents ApproveButton As Bunifu.Framework.UI.BunifuFlatButton
+End Class

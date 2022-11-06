@@ -96,7 +96,7 @@ Partial Class LogInScreen
         Me.LogInButton.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.LogInButton.OnHoverTextColor = System.Drawing.Color.Black
         Me.LogInButton.selected = False
-        Me.LogInButton.Size = New System.Drawing.Size(167, 31)
+        Me.LogInButton.Size = New System.Drawing.Size(322, 31)
         Me.LogInButton.TabIndex = 6
         Me.LogInButton.Text = "Log In"
         Me.LogInButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -108,7 +108,7 @@ Partial Class LogInScreen
         Me.SignUpBtn.AutoSize = True
         Me.SignUpBtn.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SignUpBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.SignUpBtn.Location = New System.Drawing.Point(656, 489)
+        Me.SignUpBtn.Location = New System.Drawing.Point(651, 489)
         Me.SignUpBtn.Name = "SignUpBtn"
         Me.SignUpBtn.Size = New System.Drawing.Size(292, 22)
         Me.SignUpBtn.TabIndex = 7
@@ -159,7 +159,7 @@ Partial Class LogInScreen
         Me.closeBtn.BackColor = System.Drawing.Color.Transparent
         Me.closeBtn.Image = CType(resources.GetObject("closeBtn.Image"), System.Drawing.Image)
         Me.closeBtn.ImageActive = Nothing
-        Me.closeBtn.Location = New System.Drawing.Point(1093, 7)
+        Me.closeBtn.Location = New System.Drawing.Point(1036, 5)
         Me.closeBtn.Name = "closeBtn"
         Me.closeBtn.Size = New System.Drawing.Size(30, 30)
         Me.closeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -180,13 +180,13 @@ Partial Class LogInScreen
         Me.BunifuGradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
         Me.BunifuGradientPanel1.Quality = 10
-        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(980, 40)
+        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(1080, 40)
         Me.BunifuGradientPanel1.TabIndex = 8
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.Logo
-        Me.PictureBox1.Location = New System.Drawing.Point(1, 147)
+        Me.PictureBox1.Location = New System.Drawing.Point(25, 147)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(489, 313)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -198,7 +198,7 @@ Partial Class LogInScreen
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(980, 625)
+        Me.ClientSize = New System.Drawing.Size(1080, 625)
         Me.Controls.Add(Me.PasswordTb)
         Me.Controls.Add(Me.UsernameTb)
         Me.Controls.Add(Me.BunifuGradientPanel1)

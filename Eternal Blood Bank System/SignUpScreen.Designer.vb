@@ -33,8 +33,8 @@ Partial Class SignUpScreen
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel8 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.SignUpBtn = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.LogInButton = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.SigninBtn = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.SignUpButton = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.DOB = New Bunifu.Framework.UI.BunifuDatepicker()
         Me.FirstNameTb = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.NumberTb = New Bunifu.Framework.UI.BunifuMaterialTextbox()
@@ -42,7 +42,7 @@ Partial Class SignUpScreen
         Me.PasswordTb = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.EmailTb = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.LastNameTb = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.LevelCb = New System.Windows.Forms.ComboBox()
+        Me.GenderCb = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.closeBtn = New Bunifu.Framework.UI.BunifuImageButton()
@@ -129,9 +129,9 @@ Partial Class SignUpScreen
         Me.BunifuCustomLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.BunifuCustomLabel7.Location = New System.Drawing.Point(821, 296)
         Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
-        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(69, 25)
+        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(89, 25)
         Me.BunifuCustomLabel7.TabIndex = 22
-        Me.BunifuCustomLabel7.Text = "Level"
+        Me.BunifuCustomLabel7.Text = "Gender"
         '
         'BunifuCustomLabel8
         '
@@ -144,66 +144,68 @@ Partial Class SignUpScreen
         Me.BunifuCustomLabel8.TabIndex = 20
         Me.BunifuCustomLabel8.Text = "Date Of Birth"
         '
-        'SignUpBtn
+        'SigninBtn
         '
-        Me.SignUpBtn.AutoSize = True
-        Me.SignUpBtn.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SignUpBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.SignUpBtn.Location = New System.Drawing.Point(637, 555)
-        Me.SignUpBtn.Name = "SignUpBtn"
-        Me.SignUpBtn.Size = New System.Drawing.Size(310, 22)
-        Me.SignUpBtn.TabIndex = 28
-        Me.SignUpBtn.Text = "Don you have an account? Click Here." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.SigninBtn.AutoSize = True
+        Me.SigninBtn.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SigninBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.SigninBtn.Location = New System.Drawing.Point(637, 555)
+        Me.SigninBtn.Name = "SigninBtn"
+        Me.SigninBtn.Size = New System.Drawing.Size(320, 22)
+        Me.SigninBtn.TabIndex = 28
+        Me.SigninBtn.Text = "Don't you have an account? Click Here." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'LogInButton
+        'SignUpButton
         '
-        Me.LogInButton.Activecolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.LogInButton.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.SignUpButton.Activecolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.SignUpButton.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LogInButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.LogInButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.LogInButton.BorderRadius = 0
-        Me.LogInButton.ButtonText = "Sign Up"
-        Me.LogInButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LogInButton.DisabledColor = System.Drawing.Color.Gray
-        Me.LogInButton.Iconcolor = System.Drawing.Color.Transparent
-        Me.LogInButton.Iconimage = Nothing
-        Me.LogInButton.Iconimage_right = Nothing
-        Me.LogInButton.Iconimage_right_Selected = Nothing
-        Me.LogInButton.Iconimage_Selected = Nothing
-        Me.LogInButton.IconMarginLeft = 0
-        Me.LogInButton.IconMarginRight = 0
-        Me.LogInButton.IconRightVisible = True
-        Me.LogInButton.IconRightZoom = 0R
-        Me.LogInButton.IconVisible = True
-        Me.LogInButton.IconZoom = 90.0R
-        Me.LogInButton.IsTab = False
-        Me.LogInButton.Location = New System.Drawing.Point(633, 490)
-        Me.LogInButton.Name = "LogInButton"
-        Me.LogInButton.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.LogInButton.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.LogInButton.OnHoverTextColor = System.Drawing.Color.Black
-        Me.LogInButton.selected = False
-        Me.LogInButton.Size = New System.Drawing.Size(331, 31)
-        Me.LogInButton.TabIndex = 27
-        Me.LogInButton.Text = "Sign Up"
-        Me.LogInButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.LogInButton.Textcolor = System.Drawing.Color.Black
-        Me.LogInButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SignUpButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.SignUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SignUpButton.BorderRadius = 0
+        Me.SignUpButton.ButtonText = "Sign Up"
+        Me.SignUpButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SignUpButton.DisabledColor = System.Drawing.Color.Gray
+        Me.SignUpButton.Iconcolor = System.Drawing.Color.Transparent
+        Me.SignUpButton.Iconimage = Nothing
+        Me.SignUpButton.Iconimage_right = Nothing
+        Me.SignUpButton.Iconimage_right_Selected = Nothing
+        Me.SignUpButton.Iconimage_Selected = Nothing
+        Me.SignUpButton.IconMarginLeft = 0
+        Me.SignUpButton.IconMarginRight = 0
+        Me.SignUpButton.IconRightVisible = True
+        Me.SignUpButton.IconRightZoom = 0R
+        Me.SignUpButton.IconVisible = True
+        Me.SignUpButton.IconZoom = 90.0R
+        Me.SignUpButton.IsTab = False
+        Me.SignUpButton.Location = New System.Drawing.Point(633, 490)
+        Me.SignUpButton.Name = "SignUpButton"
+        Me.SignUpButton.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.SignUpButton.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.SignUpButton.OnHoverTextColor = System.Drawing.Color.Black
+        Me.SignUpButton.selected = False
+        Me.SignUpButton.Size = New System.Drawing.Size(331, 31)
+        Me.SignUpButton.TabIndex = 27
+        Me.SignUpButton.Text = "Sign Up"
+        Me.SignUpButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.SignUpButton.Textcolor = System.Drawing.Color.Black
+        Me.SignUpButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'DOB
         '
-        Me.DOB.BackColor = System.Drawing.Color.White
+        Me.DOB.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.DOB.BorderRadius = 0
+        Me.DOB.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DOB.ForeColor = System.Drawing.Color.Black
-        Me.DOB.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.DOB.FormatCustom = Nothing
-        Me.DOB.Location = New System.Drawing.Point(499, 341)
+        Me.DOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DOB.FormatCustom = "dd-MM-yyyy"
+        Me.DOB.Location = New System.Drawing.Point(499, 333)
+        Me.DOB.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.DOB.Name = "DOB"
-        Me.DOB.Size = New System.Drawing.Size(264, 24)
+        Me.DOB.Size = New System.Drawing.Size(264, 32)
         Me.DOB.TabIndex = 29
-        Me.DOB.Value = New Date(2022, 10, 22, 1, 46, 4, 27)
+        Me.DOB.Value = New Date(2022, 10, 22, 0, 0, 0, 0)
         '
         'FirstNameTb
         '
@@ -325,14 +327,17 @@ Partial Class SignUpScreen
         Me.LastNameTb.TabIndex = 35
         Me.LastNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'LevelCb
+        'GenderCb
         '
-        Me.LevelCb.FormattingEnabled = True
-        Me.LevelCb.Items.AddRange(New Object() {"Admin", "Donor"})
-        Me.LevelCb.Location = New System.Drawing.Point(826, 341)
-        Me.LevelCb.Name = "LevelCb"
-        Me.LevelCb.Size = New System.Drawing.Size(264, 21)
-        Me.LevelCb.TabIndex = 36
+        Me.GenderCb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.GenderCb.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.GenderCb.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GenderCb.FormattingEnabled = True
+        Me.GenderCb.Items.AddRange(New Object() {"Male", "Female"})
+        Me.GenderCb.Location = New System.Drawing.Point(826, 333)
+        Me.GenderCb.Name = "GenderCb"
+        Me.GenderCb.Size = New System.Drawing.Size(264, 32)
+        Me.GenderCb.TabIndex = 36
         '
         'PictureBox1
         '
@@ -379,7 +384,7 @@ Partial Class SignUpScreen
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1144, 625)
-        Me.Controls.Add(Me.LevelCb)
+        Me.Controls.Add(Me.GenderCb)
         Me.Controls.Add(Me.LastNameTb)
         Me.Controls.Add(Me.EmailTb)
         Me.Controls.Add(Me.PasswordTb)
@@ -387,8 +392,8 @@ Partial Class SignUpScreen
         Me.Controls.Add(Me.NumberTb)
         Me.Controls.Add(Me.FirstNameTb)
         Me.Controls.Add(Me.DOB)
-        Me.Controls.Add(Me.SignUpBtn)
-        Me.Controls.Add(Me.LogInButton)
+        Me.Controls.Add(Me.SigninBtn)
+        Me.Controls.Add(Me.SignUpButton)
         Me.Controls.Add(Me.BunifuCustomLabel5)
         Me.Controls.Add(Me.BunifuCustomLabel6)
         Me.Controls.Add(Me.BunifuCustomLabel7)
@@ -421,8 +426,8 @@ Partial Class SignUpScreen
     Friend WithEvents BunifuCustomLabel8 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents SignUpBtn As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents LogInButton As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents SigninBtn As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents SignUpButton As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents FirstNameTb As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents DOB As Bunifu.Framework.UI.BunifuDatepicker
     Friend WithEvents LastNameTb As Bunifu.Framework.UI.BunifuMaterialTextbox
@@ -430,6 +435,6 @@ Partial Class SignUpScreen
     Friend WithEvents PasswordTb As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents UsernameTb As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents NumberTb As Bunifu.Framework.UI.BunifuMaterialTextbox
-    Friend WithEvents LevelCb As ComboBox
+    Friend WithEvents GenderCb As ComboBox
     Friend WithEvents closeBtn As Bunifu.Framework.UI.BunifuImageButton
 End Class

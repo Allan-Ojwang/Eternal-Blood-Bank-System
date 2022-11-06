@@ -62,6 +62,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo-icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>Assets\Bunifu_UI_v1.52.dll</HintPath>
@@ -98,15 +101,63 @@
     <Compile Include="AdminScreen.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BloodRequestApprovalScreen.Designer.vb">
+      <DependentUpon>BloodRequestApprovalScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BloodRequestApprovalScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookDonationScreen.Designer.vb">
+      <DependentUpon>BookDonationScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookDonationScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonationAppointmentApprovalScreen.Designer.vb">
+      <DependentUpon>DonationAppointmentApprovalScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DonationAppointmentApprovalScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonationScheduleScreen.Designer.vb">
+      <DependentUpon>DonationScheduleScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DonationScheduleScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonationScreen.Designer.vb">
+      <DependentUpon>DonationScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DonationScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EternalDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EternalDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EventSetterScreen.Designer.vb">
+      <DependentUpon>EventSetterScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventSetterScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LogInScreen.Designer.vb">
       <DependentUpon>LogInScreen.vb</DependentUpon>
     </Compile>
     <Compile Include="LogInScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForBloodScreen.Designer.vb">
+      <DependentUpon>RequestForBloodScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForBloodScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleSetterScreen.Designer.vb">
+      <DependentUpon>ScheduleSetterScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleSetterScreen.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SignUpScreen.Designer.vb">
@@ -138,13 +189,43 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UserScreen.Designer.vb">
+      <DependentUpon>UserScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AdminScreen.resx">
       <DependentUpon>AdminScreen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BloodRequestApprovalScreen.resx">
+      <DependentUpon>BloodRequestApprovalScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookDonationScreen.resx">
+      <DependentUpon>BookDonationScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonationAppointmentApprovalScreen.resx">
+      <DependentUpon>DonationAppointmentApprovalScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonationScheduleScreen.resx">
+      <DependentUpon>DonationScheduleScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonationScreen.resx">
+      <DependentUpon>DonationScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventSetterScreen.resx">
+      <DependentUpon>EventSetterScreen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogInScreen.resx">
       <DependentUpon>LogInScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForBloodScreen.resx">
+      <DependentUpon>RequestForBloodScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleSetterScreen.resx">
+      <DependentUpon>ScheduleSetterScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpScreen.resx">
       <DependentUpon>SignUpScreen.vb</DependentUpon>
@@ -157,6 +238,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserScreen.resx">
+      <DependentUpon>UserScreen.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -213,13 +297,20 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Eternal.mdf">
+    <None Include="Assets\Blood A+.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Blood A-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Blood B+.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Eternal.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\Eternal_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Eternal.mdf</DependentUpon>
-    </Content>
+    <None Include="Assets\records.png" />
+    <Content Include="logo-icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

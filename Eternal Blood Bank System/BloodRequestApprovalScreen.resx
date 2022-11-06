@@ -117,26 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="LogInCorners.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="BunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACqSURBVChTbc/rCoJAGITh745CMstMNDFFTIsII6Tb73w2
-        OxoTrgi7S/8fXmboGlg4eyZOroGj08XB7mBnatgaLWz0JlaagqXaAGWhjRJf/BrrHFYZXrcV0C1ykIV9
-        hvny3hLLdB+7qLBc5meooMfEQz6qMV/uCWV6Tn2UWC7LB+k9C1DhAcN5/G+GDvrMQ7ySGvNl8SAV6RAl
-        lsvyQfouYhRpxDBfFg9a+AFWGPb6yNHafgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="closeBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABMAAAAUCAYAAABvVQZ0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAMRJREFUOE+1k4ENwiAQRRnBERzBDXQDR3IFN9ANHMFRHMER6v/IGcDPHTXxJy9p
-        4Xht4Zr+mR3Yvi/DHMCw9goW8ASUenFrbdLwhG7tGdSTsqikF9W1G5BuZUBRC0ciYw/yJj7KgIJC74Hk
-        Aj6JhB6NyPKLUIosa4SuyEKhWlzDPZxKdGpEtc1XZkSGK1wjMqQwEnGRGieNcPQ7GTy1mcYOf6f6+CPh
-        EeRXVJ+h+mgkbGp7odeQvVDWUngHp3znh8KuNqUXJeXSIDqkw3cAAAAASUVORK5CYII=
-</value>
-  </data>
+  <metadata name="BackElipse.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>125, 20</value>
+  </metadata>
 </root>
