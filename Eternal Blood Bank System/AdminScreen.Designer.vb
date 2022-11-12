@@ -39,6 +39,7 @@ Partial Class AdminScreen
         Me.StaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSplitButton5 = New System.Windows.Forms.ToolStripSplitButton()
         Me.ScheduleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BloodLevelLimitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripSplitButton()
         Me.BloodStockToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSplitButton2 = New System.Windows.Forms.ToolStripSplitButton()
@@ -74,7 +75,6 @@ Partial Class AdminScreen
         Me.BunifuGradientPanel2 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.BunifuCustomLabel23 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.BloodLevelLimitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.BunifuCards1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
@@ -101,9 +101,9 @@ Partial Class AdminScreen
         Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 595)
+        Me.Panel1.Location = New System.Drawing.Point(0, 651)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1020, 40)
+        Me.Panel1.Size = New System.Drawing.Size(1200, 40)
         Me.Panel1.TabIndex = 2
         '
         'BunifuCustomLabel2
@@ -121,12 +121,12 @@ Partial Class AdminScreen
         'BunifuCustomLabel3
         '
         Me.BunifuCustomLabel3.AutoSize = True
-        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(28, 21)
+        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(16, 21)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
-        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(186, 24)
+        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(285, 25)
         Me.BunifuCustomLabel3.TabIndex = 1
-        Me.BunifuCustomLabel3.Text = "Total Blood Donated "
+        Me.BunifuCustomLabel3.Text = "Total Blood Donated In Total"
         '
         'BunifuCards1
         '
@@ -138,20 +138,20 @@ Partial Class AdminScreen
         Me.BunifuCards1.Controls.Add(Me.BunifuCustomLabel4)
         Me.BunifuCards1.Controls.Add(Me.BunifuCustomLabel3)
         Me.BunifuCards1.LeftSahddow = False
-        Me.BunifuCards1.Location = New System.Drawing.Point(229, 434)
+        Me.BunifuCards1.Location = New System.Drawing.Point(217, 434)
         Me.BunifuCards1.Name = "BunifuCards1"
         Me.BunifuCards1.RightSahddow = True
         Me.BunifuCards1.ShadowDepth = 20
-        Me.BunifuCards1.Size = New System.Drawing.Size(250, 130)
+        Me.BunifuCards1.Size = New System.Drawing.Size(320, 170)
         Me.BunifuCards1.TabIndex = 4
         '
         'BunifuCustomLabel4
         '
         Me.BunifuCustomLabel4.AutoSize = True
-        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(47, 72)
+        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(55, 72)
         Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
-        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(97, 29)
+        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(111, 31)
         Me.BunifuCustomLabel4.TabIndex = 2
         Me.BunifuCustomLabel4.Text = "5456 Lt"
         '
@@ -163,7 +163,7 @@ Partial Class AdminScreen
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSplitButton3, Me.ToolStripSplitButton4, Me.ToolStripSplitButton5, Me.ToolStripSplitButton1, Me.ToolStripSplitButton2})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 73)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(94, 522)
+        Me.ToolStrip1.Size = New System.Drawing.Size(94, 578)
         Me.ToolStrip1.TabIndex = 3
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -210,13 +210,13 @@ Partial Class AdminScreen
         'UserToolStripMenuItem
         '
         Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
-        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
         Me.UserToolStripMenuItem.Text = "User"
         '
         'StaffToolStripMenuItem
         '
         Me.StaffToolStripMenuItem.Name = "StaffToolStripMenuItem"
-        Me.StaffToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.StaffToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
         Me.StaffToolStripMenuItem.Text = "Staff"
         '
         'ToolStripSplitButton5
@@ -236,8 +236,14 @@ Partial Class AdminScreen
         'ScheduleToolStripMenuItem
         '
         Me.ScheduleToolStripMenuItem.Name = "ScheduleToolStripMenuItem"
-        Me.ScheduleToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ScheduleToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
         Me.ScheduleToolStripMenuItem.Text = "Schedule"
+        '
+        'BloodLevelLimitToolStripMenuItem
+        '
+        Me.BloodLevelLimitToolStripMenuItem.Name = "BloodLevelLimitToolStripMenuItem"
+        Me.BloodLevelLimitToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.BloodLevelLimitToolStripMenuItem.Text = "Blood Level Limit"
         '
         'ToolStripSplitButton1
         '
@@ -276,13 +282,13 @@ Partial Class AdminScreen
         'LogOutToolStripMenuItem
         '
         Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
-        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.LogOutToolStripMenuItem.Text = "Log Out"
         '
         'CloseAppToolStripMenuItem
         '
         Me.CloseAppToolStripMenuItem.Name = "CloseAppToolStripMenuItem"
-        Me.CloseAppToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.CloseAppToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CloseAppToolStripMenuItem.Text = "Close App"
         '
         'BunifuCards2
@@ -295,30 +301,30 @@ Partial Class AdminScreen
         Me.BunifuCards2.Controls.Add(Me.BunifuCustomLabel5)
         Me.BunifuCards2.Controls.Add(Me.BunifuCustomLabel6)
         Me.BunifuCards2.LeftSahddow = False
-        Me.BunifuCards2.Location = New System.Drawing.Point(621, 434)
+        Me.BunifuCards2.Location = New System.Drawing.Point(748, 434)
         Me.BunifuCards2.Name = "BunifuCards2"
         Me.BunifuCards2.RightSahddow = True
         Me.BunifuCards2.ShadowDepth = 20
-        Me.BunifuCards2.Size = New System.Drawing.Size(250, 130)
+        Me.BunifuCards2.Size = New System.Drawing.Size(320, 170)
         Me.BunifuCards2.TabIndex = 5
         '
         'BunifuCustomLabel5
         '
         Me.BunifuCustomLabel5.AutoSize = True
-        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel5.Location = New System.Drawing.Point(45, 72)
         Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
-        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(69, 29)
+        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(79, 31)
         Me.BunifuCustomLabel5.TabIndex = 2
         Me.BunifuCustomLabel5.Text = "56 Lt"
         '
         'BunifuCustomLabel6
         '
         Me.BunifuCustomLabel6.AutoSize = True
-        Me.BunifuCustomLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(6, 21)
+        Me.BunifuCustomLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel6.Location = New System.Drawing.Point(22, 21)
         Me.BunifuCustomLabel6.Name = "BunifuCustomLabel6"
-        Me.BunifuCustomLabel6.Size = New System.Drawing.Size(239, 24)
+        Me.BunifuCustomLabel6.Size = New System.Drawing.Size(274, 25)
         Me.BunifuCustomLabel6.TabIndex = 1
         Me.BunifuCustomLabel6.Text = "Total Blood Donated Today"
         '
@@ -326,7 +332,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel7.AutoSize = True
         Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(277, 162)
+        Me.BunifuCustomLabel7.Location = New System.Drawing.Point(342, 161)
         Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
         Me.BunifuCustomLabel7.Size = New System.Drawing.Size(76, 29)
         Me.BunifuCustomLabel7.TabIndex = 13
@@ -336,7 +342,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel8.AutoSize = True
         Me.BunifuCustomLabel8.Font = New System.Drawing.Font("Microsoft Uighur", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel8.Location = New System.Drawing.Point(279, 191)
+        Me.BunifuCustomLabel8.Location = New System.Drawing.Point(344, 190)
         Me.BunifuCustomLabel8.Name = "BunifuCustomLabel8"
         Me.BunifuCustomLabel8.Size = New System.Drawing.Size(71, 27)
         Me.BunifuCustomLabel8.TabIndex = 14
@@ -346,7 +352,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel9.AutoSize = True
         Me.BunifuCustomLabel9.Font = New System.Drawing.Font("Microsoft Uighur", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel9.Location = New System.Drawing.Point(469, 191)
+        Me.BunifuCustomLabel9.Location = New System.Drawing.Point(545, 190)
         Me.BunifuCustomLabel9.Name = "BunifuCustomLabel9"
         Me.BunifuCustomLabel9.Size = New System.Drawing.Size(71, 27)
         Me.BunifuCustomLabel9.TabIndex = 16
@@ -356,7 +362,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel10.AutoSize = True
         Me.BunifuCustomLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel10.Location = New System.Drawing.Point(467, 162)
+        Me.BunifuCustomLabel10.Location = New System.Drawing.Point(543, 161)
         Me.BunifuCustomLabel10.Name = "BunifuCustomLabel10"
         Me.BunifuCustomLabel10.Size = New System.Drawing.Size(76, 29)
         Me.BunifuCustomLabel10.TabIndex = 15
@@ -366,7 +372,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel11.AutoSize = True
         Me.BunifuCustomLabel11.Font = New System.Drawing.Font("Microsoft Uighur", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel11.Location = New System.Drawing.Point(667, 191)
+        Me.BunifuCustomLabel11.Location = New System.Drawing.Point(743, 190)
         Me.BunifuCustomLabel11.Name = "BunifuCustomLabel11"
         Me.BunifuCustomLabel11.Size = New System.Drawing.Size(71, 27)
         Me.BunifuCustomLabel11.TabIndex = 18
@@ -376,7 +382,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel12.AutoSize = True
         Me.BunifuCustomLabel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel12.Location = New System.Drawing.Point(665, 162)
+        Me.BunifuCustomLabel12.Location = New System.Drawing.Point(741, 161)
         Me.BunifuCustomLabel12.Name = "BunifuCustomLabel12"
         Me.BunifuCustomLabel12.Size = New System.Drawing.Size(76, 29)
         Me.BunifuCustomLabel12.TabIndex = 17
@@ -386,7 +392,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel13.AutoSize = True
         Me.BunifuCustomLabel13.Font = New System.Drawing.Font("Microsoft Uighur", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel13.Location = New System.Drawing.Point(895, 191)
+        Me.BunifuCustomLabel13.Location = New System.Drawing.Point(960, 190)
         Me.BunifuCustomLabel13.Name = "BunifuCustomLabel13"
         Me.BunifuCustomLabel13.Size = New System.Drawing.Size(71, 27)
         Me.BunifuCustomLabel13.TabIndex = 20
@@ -396,7 +402,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel14.AutoSize = True
         Me.BunifuCustomLabel14.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel14.Location = New System.Drawing.Point(895, 162)
+        Me.BunifuCustomLabel14.Location = New System.Drawing.Point(960, 161)
         Me.BunifuCustomLabel14.Name = "BunifuCustomLabel14"
         Me.BunifuCustomLabel14.Size = New System.Drawing.Size(76, 29)
         Me.BunifuCustomLabel14.TabIndex = 19
@@ -406,7 +412,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel15.AutoSize = True
         Me.BunifuCustomLabel15.Font = New System.Drawing.Font("Microsoft Uighur", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel15.Location = New System.Drawing.Point(897, 345)
+        Me.BunifuCustomLabel15.Location = New System.Drawing.Point(962, 344)
         Me.BunifuCustomLabel15.Name = "BunifuCustomLabel15"
         Me.BunifuCustomLabel15.Size = New System.Drawing.Size(71, 27)
         Me.BunifuCustomLabel15.TabIndex = 22
@@ -416,7 +422,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel16.AutoSize = True
         Me.BunifuCustomLabel16.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel16.Location = New System.Drawing.Point(895, 316)
+        Me.BunifuCustomLabel16.Location = New System.Drawing.Point(960, 315)
         Me.BunifuCustomLabel16.Name = "BunifuCustomLabel16"
         Me.BunifuCustomLabel16.Size = New System.Drawing.Size(76, 29)
         Me.BunifuCustomLabel16.TabIndex = 21
@@ -426,7 +432,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel17.AutoSize = True
         Me.BunifuCustomLabel17.Font = New System.Drawing.Font("Microsoft Uighur", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel17.Location = New System.Drawing.Point(667, 345)
+        Me.BunifuCustomLabel17.Location = New System.Drawing.Point(743, 344)
         Me.BunifuCustomLabel17.Name = "BunifuCustomLabel17"
         Me.BunifuCustomLabel17.Size = New System.Drawing.Size(71, 27)
         Me.BunifuCustomLabel17.TabIndex = 24
@@ -436,7 +442,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel18.AutoSize = True
         Me.BunifuCustomLabel18.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel18.Location = New System.Drawing.Point(665, 316)
+        Me.BunifuCustomLabel18.Location = New System.Drawing.Point(741, 315)
         Me.BunifuCustomLabel18.Name = "BunifuCustomLabel18"
         Me.BunifuCustomLabel18.Size = New System.Drawing.Size(76, 29)
         Me.BunifuCustomLabel18.TabIndex = 23
@@ -446,7 +452,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel19.AutoSize = True
         Me.BunifuCustomLabel19.Font = New System.Drawing.Font("Microsoft Uighur", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel19.Location = New System.Drawing.Point(279, 345)
+        Me.BunifuCustomLabel19.Location = New System.Drawing.Point(344, 344)
         Me.BunifuCustomLabel19.Name = "BunifuCustomLabel19"
         Me.BunifuCustomLabel19.Size = New System.Drawing.Size(71, 27)
         Me.BunifuCustomLabel19.TabIndex = 26
@@ -456,7 +462,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel20.AutoSize = True
         Me.BunifuCustomLabel20.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel20.Location = New System.Drawing.Point(277, 316)
+        Me.BunifuCustomLabel20.Location = New System.Drawing.Point(342, 315)
         Me.BunifuCustomLabel20.Name = "BunifuCustomLabel20"
         Me.BunifuCustomLabel20.Size = New System.Drawing.Size(76, 29)
         Me.BunifuCustomLabel20.TabIndex = 25
@@ -466,7 +472,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel21.AutoSize = True
         Me.BunifuCustomLabel21.Font = New System.Drawing.Font("Microsoft Uighur", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel21.Location = New System.Drawing.Point(469, 345)
+        Me.BunifuCustomLabel21.Location = New System.Drawing.Point(545, 344)
         Me.BunifuCustomLabel21.Name = "BunifuCustomLabel21"
         Me.BunifuCustomLabel21.Size = New System.Drawing.Size(71, 27)
         Me.BunifuCustomLabel21.TabIndex = 28
@@ -476,7 +482,7 @@ Partial Class AdminScreen
         '
         Me.BunifuCustomLabel22.AutoSize = True
         Me.BunifuCustomLabel22.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel22.Location = New System.Drawing.Point(467, 316)
+        Me.BunifuCustomLabel22.Location = New System.Drawing.Point(543, 315)
         Me.BunifuCustomLabel22.Name = "BunifuCustomLabel22"
         Me.BunifuCustomLabel22.Size = New System.Drawing.Size(76, 29)
         Me.BunifuCustomLabel22.TabIndex = 27
@@ -485,7 +491,7 @@ Partial Class AdminScreen
         'PictureBox9
         '
         Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(377, 279)
+        Me.PictureBox9.Location = New System.Drawing.Point(457, 278)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(80, 109)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -495,7 +501,7 @@ Partial Class AdminScreen
         'PictureBox8
         '
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(191, 279)
+        Me.PictureBox8.Location = New System.Drawing.Point(256, 278)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(80, 109)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -505,7 +511,7 @@ Partial Class AdminScreen
         'PictureBox7
         '
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(578, 279)
+        Me.PictureBox7.Location = New System.Drawing.Point(654, 278)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(80, 109)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -515,7 +521,7 @@ Partial Class AdminScreen
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(809, 279)
+        Me.PictureBox6.Location = New System.Drawing.Point(874, 278)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(80, 109)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -525,7 +531,7 @@ Partial Class AdminScreen
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(809, 120)
+        Me.PictureBox5.Location = New System.Drawing.Point(874, 119)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(80, 109)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -535,7 +541,7 @@ Partial Class AdminScreen
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(578, 120)
+        Me.PictureBox4.Location = New System.Drawing.Point(654, 119)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(80, 109)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -545,7 +551,7 @@ Partial Class AdminScreen
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(381, 120)
+        Me.PictureBox3.Location = New System.Drawing.Point(457, 119)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(80, 109)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -555,7 +561,7 @@ Partial Class AdminScreen
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(191, 120)
+        Me.PictureBox2.Location = New System.Drawing.Point(256, 119)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(80, 109)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -576,7 +582,7 @@ Partial Class AdminScreen
         Me.BunifuGradientPanel2.Location = New System.Drawing.Point(0, 0)
         Me.BunifuGradientPanel2.Name = "BunifuGradientPanel2"
         Me.BunifuGradientPanel2.Quality = 10
-        Me.BunifuGradientPanel2.Size = New System.Drawing.Size(1020, 73)
+        Me.BunifuGradientPanel2.Size = New System.Drawing.Size(1200, 73)
         Me.BunifuGradientPanel2.TabIndex = 1
         '
         'BunifuCustomLabel23
@@ -584,7 +590,7 @@ Partial Class AdminScreen
         Me.BunifuCustomLabel23.AutoSize = True
         Me.BunifuCustomLabel23.BackColor = System.Drawing.Color.Transparent
         Me.BunifuCustomLabel23.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel23.Location = New System.Drawing.Point(219, 9)
+        Me.BunifuCustomLabel23.Location = New System.Drawing.Point(303, 14)
         Me.BunifuCustomLabel23.Name = "BunifuCustomLabel23"
         Me.BunifuCustomLabel23.Size = New System.Drawing.Size(633, 55)
         Me.BunifuCustomLabel23.TabIndex = 3
@@ -601,17 +607,11 @@ Partial Class AdminScreen
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'BloodLevelLimitToolStripMenuItem
-        '
-        Me.BloodLevelLimitToolStripMenuItem.Name = "BloodLevelLimitToolStripMenuItem"
-        Me.BloodLevelLimitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.BloodLevelLimitToolStripMenuItem.Text = "Blood Level Limit"
-        '
         'AdminScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1020, 635)
+        Me.ClientSize = New System.Drawing.Size(1200, 691)
         Me.Controls.Add(Me.BunifuCustomLabel21)
         Me.Controls.Add(Me.BunifuCustomLabel22)
         Me.Controls.Add(Me.BunifuCustomLabel19)

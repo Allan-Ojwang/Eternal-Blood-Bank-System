@@ -8,4 +8,14 @@
         Me.Hide()
         DonationAppointmentApprovalScreen.Show()
     End Sub
+
+    Private Sub BloodRequestToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BloodRequestToolStripMenuItem.Click
+        Me.Hide()
+        BloodRequestApprovalScreen.Show()
+    End Sub
+
+    Private Sub ScheduleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ScheduleToolStripMenuItem.Click
+        Me.Hide()
+        ScheduleSetterScreen.Show()
+    End Sub
 End Class

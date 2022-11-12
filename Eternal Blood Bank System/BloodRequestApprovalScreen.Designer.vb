@@ -26,10 +26,11 @@ Partial Class BloodRequestApprovalScreen
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BackElipse = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.backBtn = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.RequestDataGridView = New System.Windows.Forms.DataGridView()
         Me.ApproveButton = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.DisapproveButton = New Bunifu.Framework.UI.BunifuFlatButton()
         CType(Me.backBtn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RequestDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -56,13 +57,13 @@ Partial Class BloodRequestApprovalScreen
         Me.backBtn.TabStop = False
         Me.backBtn.Zoom = 10
         '
-        'DataGridView1
+        'RequestDataGridView
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(86, 113)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(871, 476)
-        Me.DataGridView1.TabIndex = 5
+        Me.RequestDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.RequestDataGridView.Location = New System.Drawing.Point(86, 113)
+        Me.RequestDataGridView.Name = "RequestDataGridView"
+        Me.RequestDataGridView.Size = New System.Drawing.Size(871, 476)
+        Me.RequestDataGridView.TabIndex = 5
         '
         'ApproveButton
         '
@@ -101,19 +102,57 @@ Partial Class BloodRequestApprovalScreen
         Me.ApproveButton.Textcolor = System.Drawing.Color.Black
         Me.ApproveButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'DisapproveButton
+        '
+        Me.DisapproveButton.Activecolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.DisapproveButton.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DisapproveButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.DisapproveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.DisapproveButton.BorderRadius = 0
+        Me.DisapproveButton.ButtonText = "Disapprove"
+        Me.DisapproveButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DisapproveButton.DisabledColor = System.Drawing.Color.Gray
+        Me.DisapproveButton.Iconcolor = System.Drawing.Color.Transparent
+        Me.DisapproveButton.Iconimage = Nothing
+        Me.DisapproveButton.Iconimage_right = Nothing
+        Me.DisapproveButton.Iconimage_right_Selected = Nothing
+        Me.DisapproveButton.Iconimage_Selected = Nothing
+        Me.DisapproveButton.IconMarginLeft = 0
+        Me.DisapproveButton.IconMarginRight = 0
+        Me.DisapproveButton.IconRightVisible = True
+        Me.DisapproveButton.IconRightZoom = 0R
+        Me.DisapproveButton.IconVisible = True
+        Me.DisapproveButton.IconZoom = 90.0R
+        Me.DisapproveButton.IsTab = False
+        Me.DisapproveButton.Location = New System.Drawing.Point(805, 42)
+        Me.DisapproveButton.Name = "DisapproveButton"
+        Me.DisapproveButton.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.DisapproveButton.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.DisapproveButton.OnHoverTextColor = System.Drawing.Color.Black
+        Me.DisapproveButton.selected = False
+        Me.DisapproveButton.Size = New System.Drawing.Size(152, 32)
+        Me.DisapproveButton.TabIndex = 67
+        Me.DisapproveButton.Text = "Disapprove"
+        Me.DisapproveButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.DisapproveButton.Textcolor = System.Drawing.Color.Black
+        Me.DisapproveButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'BloodRequestApprovalScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1020, 635)
+        Me.Controls.Add(Me.DisapproveButton)
         Me.Controls.Add(Me.ApproveButton)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.RequestDataGridView)
         Me.Controls.Add(Me.backBtn)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "BloodRequestApprovalScreen"
         Me.Text = "BloodRequestApprovalScreen"
         CType(Me.backBtn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RequestDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -122,6 +161,7 @@ Partial Class BloodRequestApprovalScreen
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents backBtn As Bunifu.Framework.UI.BunifuImageButton
     Friend WithEvents BackElipse As Bunifu.Framework.UI.BunifuElipse
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents RequestDataGridView As DataGridView
     Friend WithEvents ApproveButton As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents DisapproveButton As Bunifu.Framework.UI.BunifuFlatButton
 End Class
