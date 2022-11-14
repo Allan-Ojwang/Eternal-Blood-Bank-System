@@ -17,4 +17,10 @@
         Me.Hide()
         DonationScheduleScreen.Show()
     End Sub
+
+    Private Sub logOutToolStripButton_Click(sender As Object, e As EventArgs) Handles logOutToolStripButton.Click
+        Me.Hide()
+        LogInScreen.Show()
+    End Sub
+
 End Class

@@ -31,20 +31,6 @@ Partial Class AdminScreen
         Me.BunifuCards1 = New Bunifu.Framework.UI.BunifuCards()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripSplitButton3 = New System.Windows.Forms.ToolStripSplitButton()
-        Me.BloodDonationAppointmentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BloodRequestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSplitButton4 = New System.Windows.Forms.ToolStripSplitButton()
-        Me.UserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSplitButton5 = New System.Windows.Forms.ToolStripSplitButton()
-        Me.ScheduleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BloodLevelLimitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripSplitButton()
-        Me.BloodStockToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSplitButton2 = New System.Windows.Forms.ToolStripSplitButton()
-        Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CloseAppToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BunifuCards2 = New Bunifu.Framework.UI.BunifuCards()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -72,6 +58,21 @@ Partial Class AdminScreen
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.AddToolStripSplitButton = New System.Windows.Forms.ToolStripSplitButton()
+        Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AcceptToolStripSplitButton = New System.Windows.Forms.ToolStripSplitButton()
+        Me.BloodDonationAppointmentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BloodRequestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ManageToolStripSplitButton = New System.Windows.Forms.ToolStripSplitButton()
+        Me.UserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SetToolStripSplitButton = New System.Windows.Forms.ToolStripSplitButton()
+        Me.ScheduleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripSplitButton = New System.Windows.Forms.ToolStripSplitButton()
+        Me.AllReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripSplitButton = New System.Windows.Forms.ToolStripSplitButton()
+        Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CloseAppToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BunifuGradientPanel2 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.BunifuCustomLabel23 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -112,7 +113,7 @@ Partial Class AdminScreen
         Me.BunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent
         Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(385, 15)
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(462, 10)
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
         Me.BunifuCustomLabel2.Size = New System.Drawing.Size(283, 24)
         Me.BunifuCustomLabel2.TabIndex = 1
@@ -148,10 +149,10 @@ Partial Class AdminScreen
         'BunifuCustomLabel4
         '
         Me.BunifuCustomLabel4.AutoSize = True
-        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(55, 72)
+        Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(69, 72)
         Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
-        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(111, 31)
+        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(192, 55)
         Me.BunifuCustomLabel4.TabIndex = 2
         Me.BunifuCustomLabel4.Text = "5456 Lt"
         '
@@ -160,136 +161,12 @@ Partial Class AdminScreen
         Me.ToolStrip1.AutoSize = False
         Me.ToolStrip1.BackColor = System.Drawing.Color.Black
         Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSplitButton3, Me.ToolStripSplitButton4, Me.ToolStripSplitButton5, Me.ToolStripSplitButton1, Me.ToolStripSplitButton2})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddToolStripSplitButton, Me.AcceptToolStripSplitButton, Me.ManageToolStripSplitButton, Me.SetToolStripSplitButton, Me.ReportsToolStripSplitButton, Me.ExitToolStripSplitButton})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 73)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(94, 578)
         Me.ToolStrip1.TabIndex = 3
         Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'ToolStripSplitButton3
-        '
-        Me.ToolStripSplitButton3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BloodDonationAppointmentToolStripMenuItem, Me.BloodRequestToolStripMenuItem})
-        Me.ToolStripSplitButton3.ForeColor = System.Drawing.Color.White
-        Me.ToolStripSplitButton3.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.accept
-        Me.ToolStripSplitButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripSplitButton3.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripSplitButton3.Margin = New System.Windows.Forms.Padding(0, 25, 0, 0)
-        Me.ToolStripSplitButton3.Name = "ToolStripSplitButton3"
-        Me.ToolStripSplitButton3.Size = New System.Drawing.Size(92, 69)
-        Me.ToolStripSplitButton3.Text = "Accept"
-        Me.ToolStripSplitButton3.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
-        Me.ToolStripSplitButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'BloodDonationAppointmentToolStripMenuItem
-        '
-        Me.BloodDonationAppointmentToolStripMenuItem.Name = "BloodDonationAppointmentToolStripMenuItem"
-        Me.BloodDonationAppointmentToolStripMenuItem.Size = New System.Drawing.Size(231, 22)
-        Me.BloodDonationAppointmentToolStripMenuItem.Text = "Blood Donation Appointment"
-        '
-        'BloodRequestToolStripMenuItem
-        '
-        Me.BloodRequestToolStripMenuItem.Name = "BloodRequestToolStripMenuItem"
-        Me.BloodRequestToolStripMenuItem.Size = New System.Drawing.Size(231, 22)
-        Me.BloodRequestToolStripMenuItem.Text = "Blood Request"
-        '
-        'ToolStripSplitButton4
-        '
-        Me.ToolStripSplitButton4.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UserToolStripMenuItem, Me.StaffToolStripMenuItem})
-        Me.ToolStripSplitButton4.ForeColor = System.Drawing.Color.White
-        Me.ToolStripSplitButton4.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.manage
-        Me.ToolStripSplitButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripSplitButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripSplitButton4.Margin = New System.Windows.Forms.Padding(0, 25, 0, 0)
-        Me.ToolStripSplitButton4.Name = "ToolStripSplitButton4"
-        Me.ToolStripSplitButton4.Size = New System.Drawing.Size(92, 69)
-        Me.ToolStripSplitButton4.Text = "Manage"
-        Me.ToolStripSplitButton4.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
-        Me.ToolStripSplitButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'UserToolStripMenuItem
-        '
-        Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
-        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
-        Me.UserToolStripMenuItem.Text = "User"
-        '
-        'StaffToolStripMenuItem
-        '
-        Me.StaffToolStripMenuItem.Name = "StaffToolStripMenuItem"
-        Me.StaffToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
-        Me.StaffToolStripMenuItem.Text = "Staff"
-        '
-        'ToolStripSplitButton5
-        '
-        Me.ToolStripSplitButton5.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ScheduleToolStripMenuItem, Me.BloodLevelLimitToolStripMenuItem})
-        Me.ToolStripSplitButton5.ForeColor = System.Drawing.Color.White
-        Me.ToolStripSplitButton5.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources._Set
-        Me.ToolStripSplitButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripSplitButton5.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripSplitButton5.Margin = New System.Windows.Forms.Padding(0, 25, 0, 0)
-        Me.ToolStripSplitButton5.Name = "ToolStripSplitButton5"
-        Me.ToolStripSplitButton5.Size = New System.Drawing.Size(92, 69)
-        Me.ToolStripSplitButton5.Text = "Set"
-        Me.ToolStripSplitButton5.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
-        Me.ToolStripSplitButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'ScheduleToolStripMenuItem
-        '
-        Me.ScheduleToolStripMenuItem.Name = "ScheduleToolStripMenuItem"
-        Me.ScheduleToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
-        Me.ScheduleToolStripMenuItem.Text = "Schedule"
-        '
-        'BloodLevelLimitToolStripMenuItem
-        '
-        Me.BloodLevelLimitToolStripMenuItem.Name = "BloodLevelLimitToolStripMenuItem"
-        Me.BloodLevelLimitToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
-        Me.BloodLevelLimitToolStripMenuItem.Text = "Blood Level Limit"
-        '
-        'ToolStripSplitButton1
-        '
-        Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BloodStockToolStripMenuItem})
-        Me.ToolStripSplitButton1.ForeColor = System.Drawing.Color.White
-        Me.ToolStripSplitButton1.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.records
-        Me.ToolStripSplitButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripSplitButton1.Margin = New System.Windows.Forms.Padding(0, 25, 0, 0)
-        Me.ToolStripSplitButton1.Name = "ToolStripSplitButton1"
-        Me.ToolStripSplitButton1.Size = New System.Drawing.Size(92, 79)
-        Me.ToolStripSplitButton1.Text = "Reports"
-        Me.ToolStripSplitButton1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
-        Me.ToolStripSplitButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'BloodStockToolStripMenuItem
-        '
-        Me.BloodStockToolStripMenuItem.Name = "BloodStockToolStripMenuItem"
-        Me.BloodStockToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.BloodStockToolStripMenuItem.Text = "Blood stock"
-        '
-        'ToolStripSplitButton2
-        '
-        Me.ToolStripSplitButton2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogOutToolStripMenuItem, Me.CloseAppToolStripMenuItem})
-        Me.ToolStripSplitButton2.ForeColor = System.Drawing.Color.White
-        Me.ToolStripSplitButton2.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources._exit
-        Me.ToolStripSplitButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripSplitButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripSplitButton2.Margin = New System.Windows.Forms.Padding(0, 25, 0, 0)
-        Me.ToolStripSplitButton2.Name = "ToolStripSplitButton2"
-        Me.ToolStripSplitButton2.Size = New System.Drawing.Size(92, 69)
-        Me.ToolStripSplitButton2.Text = "Exit"
-        Me.ToolStripSplitButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.ToolStripSplitButton2.ToolTipText = "Exit"
-        '
-        'LogOutToolStripMenuItem
-        '
-        Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
-        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.LogOutToolStripMenuItem.Text = "Log Out"
-        '
-        'CloseAppToolStripMenuItem
-        '
-        Me.CloseAppToolStripMenuItem.Name = "CloseAppToolStripMenuItem"
-        Me.CloseAppToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CloseAppToolStripMenuItem.Text = "Close App"
         '
         'BunifuCards2
         '
@@ -311,12 +188,12 @@ Partial Class AdminScreen
         'BunifuCustomLabel5
         '
         Me.BunifuCustomLabel5.AutoSize = True
-        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(45, 72)
+        Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel5.Location = New System.Drawing.Point(83, 72)
         Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
-        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(79, 31)
+        Me.BunifuCustomLabel5.Size = New System.Drawing.Size(164, 55)
         Me.BunifuCustomLabel5.TabIndex = 2
-        Me.BunifuCustomLabel5.Text = "56 Lt"
+        Me.BunifuCustomLabel5.Text = "456 Lt"
         '
         'BunifuCustomLabel6
         '
@@ -334,9 +211,9 @@ Partial Class AdminScreen
         Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel7.Location = New System.Drawing.Point(342, 161)
         Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
-        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(76, 29)
+        Me.BunifuCustomLabel7.Size = New System.Drawing.Size(104, 29)
         Me.BunifuCustomLabel7.TabIndex = 13
-        Me.BunifuCustomLabel7.Text = "56 Lt "
+        Me.BunifuCustomLabel7.Text = "4556 Lt "
         '
         'BunifuCustomLabel8
         '
@@ -364,9 +241,9 @@ Partial Class AdminScreen
         Me.BunifuCustomLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel10.Location = New System.Drawing.Point(543, 161)
         Me.BunifuCustomLabel10.Name = "BunifuCustomLabel10"
-        Me.BunifuCustomLabel10.Size = New System.Drawing.Size(76, 29)
+        Me.BunifuCustomLabel10.Size = New System.Drawing.Size(104, 29)
         Me.BunifuCustomLabel10.TabIndex = 15
-        Me.BunifuCustomLabel10.Text = "56 Lt "
+        Me.BunifuCustomLabel10.Text = "5600 Lt "
         '
         'BunifuCustomLabel11
         '
@@ -384,9 +261,9 @@ Partial Class AdminScreen
         Me.BunifuCustomLabel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel12.Location = New System.Drawing.Point(741, 161)
         Me.BunifuCustomLabel12.Name = "BunifuCustomLabel12"
-        Me.BunifuCustomLabel12.Size = New System.Drawing.Size(76, 29)
+        Me.BunifuCustomLabel12.Size = New System.Drawing.Size(104, 29)
         Me.BunifuCustomLabel12.TabIndex = 17
-        Me.BunifuCustomLabel12.Text = "56 Lt "
+        Me.BunifuCustomLabel12.Text = "3000 Lt "
         '
         'BunifuCustomLabel13
         '
@@ -404,9 +281,9 @@ Partial Class AdminScreen
         Me.BunifuCustomLabel14.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel14.Location = New System.Drawing.Point(960, 161)
         Me.BunifuCustomLabel14.Name = "BunifuCustomLabel14"
-        Me.BunifuCustomLabel14.Size = New System.Drawing.Size(76, 29)
+        Me.BunifuCustomLabel14.Size = New System.Drawing.Size(97, 29)
         Me.BunifuCustomLabel14.TabIndex = 19
-        Me.BunifuCustomLabel14.Text = "56 Lt "
+        Me.BunifuCustomLabel14.Text = "4000Lt "
         '
         'BunifuCustomLabel15
         '
@@ -424,9 +301,9 @@ Partial Class AdminScreen
         Me.BunifuCustomLabel16.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel16.Location = New System.Drawing.Point(960, 315)
         Me.BunifuCustomLabel16.Name = "BunifuCustomLabel16"
-        Me.BunifuCustomLabel16.Size = New System.Drawing.Size(76, 29)
+        Me.BunifuCustomLabel16.Size = New System.Drawing.Size(104, 29)
         Me.BunifuCustomLabel16.TabIndex = 21
-        Me.BunifuCustomLabel16.Text = "56 Lt "
+        Me.BunifuCustomLabel16.Text = "1056 Lt "
         '
         'BunifuCustomLabel17
         '
@@ -444,9 +321,9 @@ Partial Class AdminScreen
         Me.BunifuCustomLabel18.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel18.Location = New System.Drawing.Point(741, 315)
         Me.BunifuCustomLabel18.Name = "BunifuCustomLabel18"
-        Me.BunifuCustomLabel18.Size = New System.Drawing.Size(76, 29)
+        Me.BunifuCustomLabel18.Size = New System.Drawing.Size(104, 29)
         Me.BunifuCustomLabel18.TabIndex = 23
-        Me.BunifuCustomLabel18.Text = "56 Lt "
+        Me.BunifuCustomLabel18.Text = "3500 Lt "
         '
         'BunifuCustomLabel19
         '
@@ -464,9 +341,9 @@ Partial Class AdminScreen
         Me.BunifuCustomLabel20.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel20.Location = New System.Drawing.Point(342, 315)
         Me.BunifuCustomLabel20.Name = "BunifuCustomLabel20"
-        Me.BunifuCustomLabel20.Size = New System.Drawing.Size(76, 29)
+        Me.BunifuCustomLabel20.Size = New System.Drawing.Size(104, 29)
         Me.BunifuCustomLabel20.TabIndex = 25
-        Me.BunifuCustomLabel20.Text = "56 Lt "
+        Me.BunifuCustomLabel20.Text = "7500 Lt "
         '
         'BunifuCustomLabel21
         '
@@ -484,9 +361,9 @@ Partial Class AdminScreen
         Me.BunifuCustomLabel22.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel22.Location = New System.Drawing.Point(543, 315)
         Me.BunifuCustomLabel22.Name = "BunifuCustomLabel22"
-        Me.BunifuCustomLabel22.Size = New System.Drawing.Size(76, 29)
+        Me.BunifuCustomLabel22.Size = New System.Drawing.Size(104, 29)
         Me.BunifuCustomLabel22.TabIndex = 27
-        Me.BunifuCustomLabel22.Text = "56 Lt "
+        Me.BunifuCustomLabel22.Text = "7556 Lt "
         '
         'PictureBox9
         '
@@ -567,6 +444,144 @@ Partial Class AdminScreen
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox2.TabIndex = 5
         Me.PictureBox2.TabStop = False
+        '
+        'AddToolStripSplitButton
+        '
+        Me.AddToolStripSplitButton.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddToolStripMenuItem})
+        Me.AddToolStripSplitButton.ForeColor = System.Drawing.Color.White
+        Me.AddToolStripSplitButton.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.add
+        Me.AddToolStripSplitButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.AddToolStripSplitButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.AddToolStripSplitButton.Margin = New System.Windows.Forms.Padding(0, 50, 0, 0)
+        Me.AddToolStripSplitButton.Name = "AddToolStripSplitButton"
+        Me.AddToolStripSplitButton.Size = New System.Drawing.Size(92, 79)
+        Me.AddToolStripSplitButton.Text = "Add"
+        Me.AddToolStripSplitButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.AddToolStripSplitButton.ToolTipText = "Exit"
+        '
+        'AddToolStripMenuItem
+        '
+        Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
+        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.AddToolStripMenuItem.Text = "Add Donation"
+        '
+        'AcceptToolStripSplitButton
+        '
+        Me.AcceptToolStripSplitButton.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BloodDonationAppointmentToolStripMenuItem, Me.BloodRequestToolStripMenuItem})
+        Me.AcceptToolStripSplitButton.ForeColor = System.Drawing.Color.White
+        Me.AcceptToolStripSplitButton.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.accept
+        Me.AcceptToolStripSplitButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.AcceptToolStripSplitButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.AcceptToolStripSplitButton.Margin = New System.Windows.Forms.Padding(0, 25, 0, 0)
+        Me.AcceptToolStripSplitButton.Name = "AcceptToolStripSplitButton"
+        Me.AcceptToolStripSplitButton.Size = New System.Drawing.Size(92, 69)
+        Me.AcceptToolStripSplitButton.Text = "Accept"
+        Me.AcceptToolStripSplitButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
+        Me.AcceptToolStripSplitButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'BloodDonationAppointmentToolStripMenuItem
+        '
+        Me.BloodDonationAppointmentToolStripMenuItem.Name = "BloodDonationAppointmentToolStripMenuItem"
+        Me.BloodDonationAppointmentToolStripMenuItem.Size = New System.Drawing.Size(231, 22)
+        Me.BloodDonationAppointmentToolStripMenuItem.Text = "Blood Donation Appointment"
+        '
+        'BloodRequestToolStripMenuItem
+        '
+        Me.BloodRequestToolStripMenuItem.Name = "BloodRequestToolStripMenuItem"
+        Me.BloodRequestToolStripMenuItem.Size = New System.Drawing.Size(231, 22)
+        Me.BloodRequestToolStripMenuItem.Text = "Blood Request"
+        '
+        'ManageToolStripSplitButton
+        '
+        Me.ManageToolStripSplitButton.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UserToolStripMenuItem, Me.StaffToolStripMenuItem})
+        Me.ManageToolStripSplitButton.ForeColor = System.Drawing.Color.White
+        Me.ManageToolStripSplitButton.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.manage
+        Me.ManageToolStripSplitButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ManageToolStripSplitButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ManageToolStripSplitButton.Margin = New System.Windows.Forms.Padding(0, 25, 0, 0)
+        Me.ManageToolStripSplitButton.Name = "ManageToolStripSplitButton"
+        Me.ManageToolStripSplitButton.Size = New System.Drawing.Size(92, 69)
+        Me.ManageToolStripSplitButton.Text = "Manage"
+        Me.ManageToolStripSplitButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
+        Me.ManageToolStripSplitButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'UserToolStripMenuItem
+        '
+        Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
+        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
+        Me.UserToolStripMenuItem.Text = "User"
+        '
+        'StaffToolStripMenuItem
+        '
+        Me.StaffToolStripMenuItem.Name = "StaffToolStripMenuItem"
+        Me.StaffToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
+        Me.StaffToolStripMenuItem.Text = "Staff"
+        '
+        'SetToolStripSplitButton
+        '
+        Me.SetToolStripSplitButton.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ScheduleToolStripMenuItem})
+        Me.SetToolStripSplitButton.ForeColor = System.Drawing.Color.White
+        Me.SetToolStripSplitButton.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources._Set
+        Me.SetToolStripSplitButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.SetToolStripSplitButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.SetToolStripSplitButton.Margin = New System.Windows.Forms.Padding(0, 25, 0, 0)
+        Me.SetToolStripSplitButton.Name = "SetToolStripSplitButton"
+        Me.SetToolStripSplitButton.Size = New System.Drawing.Size(92, 69)
+        Me.SetToolStripSplitButton.Text = "Set"
+        Me.SetToolStripSplitButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
+        Me.SetToolStripSplitButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'ScheduleToolStripMenuItem
+        '
+        Me.ScheduleToolStripMenuItem.Name = "ScheduleToolStripMenuItem"
+        Me.ScheduleToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.ScheduleToolStripMenuItem.Text = "Set Schedule"
+        '
+        'ReportsToolStripSplitButton
+        '
+        Me.ReportsToolStripSplitButton.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AllReportsToolStripMenuItem})
+        Me.ReportsToolStripSplitButton.ForeColor = System.Drawing.Color.White
+        Me.ReportsToolStripSplitButton.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.records
+        Me.ReportsToolStripSplitButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ReportsToolStripSplitButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ReportsToolStripSplitButton.Margin = New System.Windows.Forms.Padding(0, 25, 0, 0)
+        Me.ReportsToolStripSplitButton.Name = "ReportsToolStripSplitButton"
+        Me.ReportsToolStripSplitButton.Size = New System.Drawing.Size(92, 79)
+        Me.ReportsToolStripSplitButton.Text = "Reports"
+        Me.ReportsToolStripSplitButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
+        Me.ReportsToolStripSplitButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'AllReportsToolStripMenuItem
+        '
+        Me.AllReportsToolStripMenuItem.Name = "AllReportsToolStripMenuItem"
+        Me.AllReportsToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.AllReportsToolStripMenuItem.Text = "All Reports"
+        '
+        'ExitToolStripSplitButton
+        '
+        Me.ExitToolStripSplitButton.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogOutToolStripMenuItem, Me.CloseAppToolStripMenuItem})
+        Me.ExitToolStripSplitButton.ForeColor = System.Drawing.Color.White
+        Me.ExitToolStripSplitButton.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources._exit
+        Me.ExitToolStripSplitButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ExitToolStripSplitButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ExitToolStripSplitButton.Margin = New System.Windows.Forms.Padding(0, 25, 0, 0)
+        Me.ExitToolStripSplitButton.Name = "ExitToolStripSplitButton"
+        Me.ExitToolStripSplitButton.Size = New System.Drawing.Size(66, 69)
+        Me.ExitToolStripSplitButton.Text = "Exit"
+        Me.ExitToolStripSplitButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.ExitToolStripSplitButton.ToolTipText = "Exit"
+        '
+        'LogOutToolStripMenuItem
+        '
+        Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
+        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.LogOutToolStripMenuItem.Text = "Log Out"
+        '
+        'CloseAppToolStripMenuItem
+        '
+        Me.CloseAppToolStripMenuItem.Name = "CloseAppToolStripMenuItem"
+        Me.CloseAppToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.CloseAppToolStripMenuItem.Text = "Close App"
         '
         'BunifuGradientPanel2
         '
@@ -677,12 +692,11 @@ Partial Class AdminScreen
     Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents ToolStripSplitButton3 As ToolStripSplitButton
-    Friend WithEvents ToolStripSplitButton4 As ToolStripSplitButton
-    Friend WithEvents ToolStripSplitButton5 As ToolStripSplitButton
-    Friend WithEvents ToolStripSplitButton1 As ToolStripSplitButton
-    Friend WithEvents ToolStripSplitButton2 As ToolStripSplitButton
-    Friend WithEvents LogOutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AcceptToolStripSplitButton As ToolStripSplitButton
+    Friend WithEvents ManageToolStripSplitButton As ToolStripSplitButton
+    Friend WithEvents SetToolStripSplitButton As ToolStripSplitButton
+    Friend WithEvents ReportsToolStripSplitButton As ToolStripSplitButton
+    Friend WithEvents ExitToolStripSplitButton As ToolStripSplitButton
     Friend WithEvents CloseAppToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
@@ -717,6 +731,8 @@ Partial Class AdminScreen
     Friend WithEvents UserToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StaffToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ScheduleToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BloodStockToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BloodLevelLimitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AllReportsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AddToolStripSplitButton As ToolStripSplitButton
+    Friend WithEvents AddToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LogOutToolStripMenuItem As ToolStripMenuItem
 End Class

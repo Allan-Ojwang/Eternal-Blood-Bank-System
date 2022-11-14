@@ -1,5 +1,4 @@
-﻿Imports System.Security.Cryptography
-
+﻿
 Public Class ManageUser
     Dim con As New OleDb.OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Ojwang\Desktop\Project\Eternal Blood Bank System\Eternal Blood Bank System\Eternal.mdb")
     Dim cmd As New OleDb.OleDbCommand

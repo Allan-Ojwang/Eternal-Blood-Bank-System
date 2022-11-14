@@ -25,12 +25,12 @@ Partial Class BloodRequestApprovalScreen
         Me.components = New System.ComponentModel.Container()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BackElipse = New Bunifu.Framework.UI.BunifuElipse(Me.components)
-        Me.backBtn = New Bunifu.Framework.UI.BunifuImageButton()
         Me.RequestDataGridView = New System.Windows.Forms.DataGridView()
         Me.ApproveButton = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.DisapproveButton = New Bunifu.Framework.UI.BunifuFlatButton()
-        CType(Me.backBtn, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.backBtn = New Bunifu.Framework.UI.BunifuImageButton()
         CType(Me.RequestDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.backBtn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -42,20 +42,6 @@ Partial Class BloodRequestApprovalScreen
         '
         Me.BackElipse.ElipseRadius = 5
         Me.BackElipse.TargetControl = Me.backBtn
-        '
-        'backBtn
-        '
-        Me.backBtn.BackColor = System.Drawing.Color.Black
-        Me.backBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.backBtn.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.go_back
-        Me.backBtn.ImageActive = Nothing
-        Me.backBtn.Location = New System.Drawing.Point(12, 12)
-        Me.backBtn.Name = "backBtn"
-        Me.backBtn.Size = New System.Drawing.Size(52, 52)
-        Me.backBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.backBtn.TabIndex = 4
-        Me.backBtn.TabStop = False
-        Me.backBtn.Zoom = 10
         '
         'RequestDataGridView
         '
@@ -77,6 +63,7 @@ Partial Class BloodRequestApprovalScreen
         Me.ApproveButton.ButtonText = "Approve"
         Me.ApproveButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ApproveButton.DisabledColor = System.Drawing.Color.Gray
+        Me.ApproveButton.Enabled = False
         Me.ApproveButton.Iconcolor = System.Drawing.Color.Transparent
         Me.ApproveButton.Iconimage = Nothing
         Me.ApproveButton.Iconimage_right = Nothing
@@ -114,6 +101,7 @@ Partial Class BloodRequestApprovalScreen
         Me.DisapproveButton.ButtonText = "Disapprove"
         Me.DisapproveButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DisapproveButton.DisabledColor = System.Drawing.Color.Gray
+        Me.DisapproveButton.Enabled = False
         Me.DisapproveButton.Iconcolor = System.Drawing.Color.Transparent
         Me.DisapproveButton.Iconimage = Nothing
         Me.DisapproveButton.Iconimage_right = Nothing
@@ -139,6 +127,20 @@ Partial Class BloodRequestApprovalScreen
         Me.DisapproveButton.Textcolor = System.Drawing.Color.Black
         Me.DisapproveButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'backBtn
+        '
+        Me.backBtn.BackColor = System.Drawing.Color.Black
+        Me.backBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.backBtn.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.go_back
+        Me.backBtn.ImageActive = Nothing
+        Me.backBtn.Location = New System.Drawing.Point(12, 12)
+        Me.backBtn.Name = "backBtn"
+        Me.backBtn.Size = New System.Drawing.Size(52, 52)
+        Me.backBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.backBtn.TabIndex = 4
+        Me.backBtn.TabStop = False
+        Me.backBtn.Zoom = 10
+        '
         'BloodRequestApprovalScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -150,9 +152,10 @@ Partial Class BloodRequestApprovalScreen
         Me.Controls.Add(Me.backBtn)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "BloodRequestApprovalScreen"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BloodRequestApprovalScreen"
-        CType(Me.backBtn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RequestDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.backBtn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

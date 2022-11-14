@@ -26,9 +26,9 @@ Partial Class Reports
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Reports))
-        Me.backBtn = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BackElipse = New Bunifu.Framework.UI.BunifuElipse(Me.components)
+        Me.backBtn = New Bunifu.Framework.UI.BunifuImageButton()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Donation = New System.Windows.Forms.TabPage()
         Me.DonationPrintButton = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -53,6 +53,16 @@ Partial Class Reports
         CType(Me.AppointmentReportDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'BunifuElipse1
+        '
+        Me.BunifuElipse1.ElipseRadius = 20
+        Me.BunifuElipse1.TargetControl = Me
+        '
+        'BackElipse
+        '
+        Me.BackElipse.ElipseRadius = 5
+        Me.BackElipse.TargetControl = Me.backBtn
+        '
         'backBtn
         '
         Me.backBtn.BackColor = System.Drawing.Color.Black
@@ -66,16 +76,6 @@ Partial Class Reports
         Me.backBtn.TabIndex = 2
         Me.backBtn.TabStop = False
         Me.backBtn.Zoom = 10
-        '
-        'BunifuElipse1
-        '
-        Me.BunifuElipse1.ElipseRadius = 20
-        Me.BunifuElipse1.TargetControl = Me
-        '
-        'BackElipse
-        '
-        Me.BackElipse.ElipseRadius = 5
-        Me.BackElipse.TargetControl = Me.backBtn
         '
         'TabControl1
         '

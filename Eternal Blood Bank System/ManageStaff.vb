@@ -1,11 +1,13 @@
-﻿Public Class ManageStaff
+﻿Imports System.Data.OleDb
+
+Public Class ManageStaff
     Dim con As New OleDb.OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Ojwang\Desktop\Project\Eternal Blood Bank System\Eternal Blood Bank System\Eternal.mdb")
     Dim cmd As New OleDb.OleDbCommand
     Dim da As New OleDb.OleDbDataAdapter
     Dim dt As New DataTable
     Dim sql As String
     Dim que As String
-
+    Dim id As String
     Private Sub loadData()
         Try
             con.Open()
@@ -43,15 +45,23 @@
         Me.Hide()
         AdminScreen.Show()
     End Sub
-
+    Private Sub AutoID()
+        con.Open()
+        Dim cmd3 As OleDbCommand = New OleDbCommand("Select count(Staff_ID) from Staff", con)
+        Dim i As Integer
+        i = Convert.ToInt32(cmd3.ExecuteScalar())
+        con.Close()
+        i += 1
+        id = "STAFF-" + i.ToString()
+    End Sub
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
         Dim save_check As Integer
-
+        AutoID()
         que = MsgBox("Are you sure you want to add this staff's record?", vbYesNo + vbQuestion, "Attention!!!")
         If que = vbYes Then
             Try
                 con.Open()
-                sql = "Insert into Staff (Staff_ID,Name,Phone_Number,Gender,Username,Pass) values('" & StaffIDTb.Text & "','" & FullNameTb.Text & "','" & Val(NumberTb.Text) & "','" & GenderCb.Text & "','" & UsernameTb.Text & "','" & PasswordTb.Text & "')"
+                sql = "Insert into Staff (Staff_ID,Name,Phone_Number,Gender,Username,Pass) values('" & id & "','" & FullNameTb.Text & "','" & Val(NumberTb.Text) & "','" & GenderCb.Text & "','" & UsernameTb.Text & "','" & PasswordTb.Text & "')"
                 cmd.Connection = con
                 cmd.CommandText = sql
 

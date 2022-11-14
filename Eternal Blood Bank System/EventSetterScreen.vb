@@ -1,11 +1,12 @@
-﻿Imports System.Security.Cryptography
+﻿Imports System.Data.OleDb
+Imports System.Security.Cryptography
 
 Public Class EventSetterScreen
     Dim con As New OleDb.OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Ojwang\Desktop\Project\Eternal Blood Bank System\Eternal Blood Bank System\Eternal.mdb")
     Dim cmd As New OleDb.OleDbCommand
     Dim sql As String
-
     Public AppID As Integer = 0
+
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
         Dim save_check As Integer
         If AppID = 0 Then
@@ -40,7 +41,7 @@ Public Class EventSetterScreen
                 cmd2.Connection = con
                 cmd2.CommandText = sql2
                 Dim save_check2 As Integer
-
+                save_check2 = cmd2.ExecuteNonQuery
                 If save_check2 > 0 Then
                     MsgBox("Event was updated successfully.")
 

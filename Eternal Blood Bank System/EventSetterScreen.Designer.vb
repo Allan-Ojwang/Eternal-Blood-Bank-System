@@ -153,13 +153,13 @@ Partial Class EventSetterScreen
         Me.SaveButton.IconVisible = True
         Me.SaveButton.IconZoom = 90.0R
         Me.SaveButton.IsTab = False
-        Me.SaveButton.Location = New System.Drawing.Point(249, 313)
+        Me.SaveButton.Location = New System.Drawing.Point(289, 313)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.SaveButton.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.SaveButton.OnHoverTextColor = System.Drawing.Color.Black
         Me.SaveButton.selected = False
-        Me.SaveButton.Size = New System.Drawing.Size(331, 32)
+        Me.SaveButton.Size = New System.Drawing.Size(282, 32)
         Me.SaveButton.TabIndex = 47
         Me.SaveButton.Text = "Save"
         Me.SaveButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter

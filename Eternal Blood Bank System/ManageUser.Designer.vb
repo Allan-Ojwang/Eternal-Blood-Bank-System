@@ -268,6 +268,7 @@ Partial Class ManageUser
         '
         Me.IDTb.BackColor = System.Drawing.SystemColors.Control
         Me.IDTb.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.IDTb.Enabled = False
         Me.IDTb.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IDTb.ForeColor = System.Drawing.Color.Black
         Me.IDTb.HintForeColor = System.Drawing.Color.Black

@@ -6,19 +6,30 @@ Public Class RequestForBloodScreen
     Dim dr As OleDbDataReader
     Dim sql As String
     Dim que As String
+    Dim id As String
     Private Sub backBtn_Click(sender As Object, e As EventArgs) Handles backBtn.Click
         Me.Hide()
         UserScreen.Show()
     End Sub
 
+    Private Sub AutoID()
+        con.Open()
+        Dim cmd3 As OleDbCommand = New OleDbCommand("Select count(ID) from Request", con)
+        Dim i As Integer
+        i = Convert.ToInt32(cmd3.ExecuteScalar())
+        con.Close()
+        i += 1
+        id = i.ToString()
+    End Sub
+
     Private Sub RequestButton_Click(sender As Object, e As EventArgs) Handles RequestButton.Click
         Dim save_check As Integer
-
+        AutoID()
         que = MsgBox("Are you sure you want to request for blood?", vbYesNo + vbQuestion, "Attention!!!")
         If que = vbYes Then
             Try
                 con.Open()
-                sql = "Insert into Request (First_Name,Last_Name,Phone_Number,Gender,Blood_Type,Blood_Quantity) values('" & FirstNameTb.Text & "','" & LastNameTb.Text & "'," & Val(NumberTb.Text) & ",'" & GenderCB.Text & "','" & BloodTypeCB.Text & "'," & Val(BloodNeededTB.Text) & ")"
+                sql = "Insert into Request (ID,First_Name,Last_Name,Phone_Number,Gender,Blood_Type,Blood_Quantity) values('" & id & "','" & FirstNameTb.Text & "','" & LastNameTb.Text & "'," & Val(NumberTb.Text) & ",'" & GenderCB.Text & "','" & BloodTypeCB.Text & "'," & Val(BloodNeededTB.Text) & ")"
                 cmd.Connection = con
                 cmd.CommandText = sql
 

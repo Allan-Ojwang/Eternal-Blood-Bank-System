@@ -26,22 +26,26 @@ Partial Class UserScreen
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserScreen))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.donateToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.requestToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.scheduleToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.logOutToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.closeToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BunifuGradientPanel2 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.BunifuCustomLabel23 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.ToolStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuGradientPanel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BunifuElipse1
@@ -60,46 +64,6 @@ Partial Class UserScreen
         Me.ToolStrip1.Size = New System.Drawing.Size(94, 522)
         Me.ToolStrip1.TabIndex = 6
         Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.BunifuCustomLabel2)
-        Me.Panel1.Controls.Add(Me.BunifuCustomLabel1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 595)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1020, 40)
-        Me.Panel1.TabIndex = 5
-        '
-        'BunifuCustomLabel2
-        '
-        Me.BunifuCustomLabel2.AutoSize = True
-        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(517, 15)
-        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(182, 16)
-        Me.BunifuCustomLabel2.TabIndex = 1
-        Me.BunifuCustomLabel2.Text = "Developed By - Allan Ojwang"
-        '
-        'BunifuCustomLabel1
-        '
-        Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(261, 15)
-        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(218, 16)
-        Me.BunifuCustomLabel1.TabIndex = 0
-        Me.BunifuCustomLabel1.Text = "Eternal Blood Management System"
-        '
-        'BunifuCustomLabel3
-        '
-        Me.BunifuCustomLabel3.AutoSize = True
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(310, 216)
-        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
-        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(104, 13)
-        Me.BunifuCustomLabel3.TabIndex = 7
-        Me.BunifuCustomLabel3.Text = "BunifuCustomLabel3"
         '
         'donateToolStripButton
         '
@@ -166,6 +130,58 @@ Partial Class UserScreen
         Me.closeToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.closeToolStripButton.ToolTipText = "Book"
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.BunifuCustomLabel2)
+        Me.Panel1.Controls.Add(Me.BunifuCustomLabel1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 595)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1020, 40)
+        Me.Panel1.TabIndex = 5
+        '
+        'BunifuCustomLabel2
+        '
+        Me.BunifuCustomLabel2.AutoSize = True
+        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(541, 14)
+        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
+        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(182, 16)
+        Me.BunifuCustomLabel2.TabIndex = 1
+        Me.BunifuCustomLabel2.Text = "Developed By - Allan Ojwang"
+        '
+        'BunifuCustomLabel1
+        '
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(285, 14)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(218, 16)
+        Me.BunifuCustomLabel1.TabIndex = 0
+        Me.BunifuCustomLabel1.Text = "Eternal Blood Management System"
+        '
+        'BunifuCustomLabel3
+        '
+        Me.BunifuCustomLabel3.AutoSize = True
+        Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(272, 425)
+        Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
+        Me.BunifuCustomLabel3.Size = New System.Drawing.Size(563, 33)
+        Me.BunifuCustomLabel3.TabIndex = 7
+        Me.BunifuCustomLabel3.Text = "You don't have to be a doctor to save lives"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.kisspng_blood_donation_blood_bank_charitable_organization_vector_blood_5a8769b794d4e3_2969423515188238636096
+        Me.PictureBox2.Location = New System.Drawing.Point(818, 461)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(202, 134)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
+        '
         'BunifuGradientPanel2
         '
         Me.BunifuGradientPanel2.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel2.BackgroundImage"), System.Drawing.Image)
@@ -205,11 +221,23 @@ Partial Class UserScreen
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.Eternal_Blood_Bank_System.My.Resources.Resources.kisspng_blood_donation_blood_bank_vector_hand_painted_drops_of_blood_heartbeat_5a82e063806694_2535243615185265635259
+        Me.PictureBox3.Location = New System.Drawing.Point(344, 145)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(422, 253)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 9
+        Me.PictureBox3.TabStop = False
+        '
         'UserScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1020, 635)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.BunifuCustomLabel3)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Panel1)
@@ -222,9 +250,11 @@ Partial Class UserScreen
         Me.ToolStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BunifuGradientPanel2.ResumeLayout(False)
         Me.BunifuGradientPanel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -244,4 +274,6 @@ Partial Class UserScreen
     Friend WithEvents closeToolStripButton As ToolStripButton
     Friend WithEvents BunifuCustomLabel23 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
 End Class

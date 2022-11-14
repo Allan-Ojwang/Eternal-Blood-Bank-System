@@ -5,19 +5,30 @@ Public Class BookDonationScreen
     Dim cmd As New OleDb.OleDbCommand
     Dim sql As String
     Dim que As String
+    Dim id As String
     Private Sub backBtn_Click(sender As Object, e As EventArgs) Handles backBtn.Click
         Me.Hide()
         UserScreen.Show()
     End Sub
 
+    Private Sub AutoID()
+        con.Open()
+        Dim cmd3 As OleDbCommand = New OleDbCommand("Select count(ID) from Appointment", con)
+        Dim i As Integer
+        i = Convert.ToInt32(cmd3.ExecuteScalar())
+        con.Close()
+        i += 1
+        id = i.ToString()
+    End Sub
+
     Private Sub BookButton_Click(sender As Object, e As EventArgs) Handles BookButton.Click
         Dim save_check As Integer
-
+        AutoID()
         que = MsgBox("Are you sure you want to request for blood?", vbYesNo + vbQuestion, "Attention!!!")
         If que = vbYes Then
             Try
                 con.Open()
-                sql = "Insert into Appoitment (First_Name,Last_Name,Phone_Number,Date_Of_Appointment) values('" & FirstNameTb.Text & "','" & LastNameTb.Text & "','" & Val(NumberTb.Text) & "','" & DOA.Value & "')"
+                sql = "Insert into Appointment (ID,First_Name,Last_Name,Phone_Number,Date_Of_Appointment) values('" & id & "','" & FirstNameTb.Text & "','" & LastNameTb.Text & "','" & Val(NumberTb.Text) & "','" & DOA.Value & "')"
                 cmd.Connection = con
                 cmd.CommandText = sql
 

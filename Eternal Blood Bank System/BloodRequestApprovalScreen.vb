@@ -1,14 +1,10 @@
-﻿Imports System.Data.OleDb
-
-
-Public Class BloodRequestApprovalScreen
+﻿Public Class BloodRequestApprovalScreen
 
     Dim con As New OleDb.OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Ojwang\Desktop\Project\Eternal Blood Bank System\Eternal Blood Bank System\Eternal.mdb")
     Dim cmd As New OleDb.OleDbCommand
     Dim da As New OleDb.OleDbDataAdapter
     Dim dt As New DataTable
-    Dim sql As String
-    Dim ID As String
+    Dim sql, ID As String
 
     Private Sub backBtn_Click(sender As Object, e As EventArgs) Handles backBtn.Click
         Me.Hide()
@@ -33,6 +29,8 @@ Public Class BloodRequestApprovalScreen
         loadData()
     End Sub
     Private Sub RequestDataGridView_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles RequestDataGridView.CellClick
+        ApproveButton.Enabled = True
+        DisapproveButton.Enabled = True
         Dim index As Integer
         index = e.RowIndex
         Dim selectedrow As DataGridViewRow
@@ -63,11 +61,12 @@ Public Class BloodRequestApprovalScreen
             Finally
                 con.Close()
                 RequestDataGridView.DataSource.Clear()
+                RequestDataGridView.ClearSelection()
                 loadData()
+                ApproveButton.Enabled = False
+                DisapproveButton.Enabled = False
             End Try
         End If
-
-
     End Sub
 
     Private Sub DisapproveButton_Click(sender As Object, e As EventArgs) Handles DisapproveButton.Click
@@ -93,7 +92,10 @@ Public Class BloodRequestApprovalScreen
             Finally
                 con.Close()
                 RequestDataGridView.DataSource.Clear()
+                RequestDataGridView.ClearSelection()
                 loadData()
+                ApproveButton.Enabled = False
+                DisapproveButton.Enabled = False
             End Try
         End If
     End Sub

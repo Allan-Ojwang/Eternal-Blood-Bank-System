@@ -149,11 +149,11 @@ Partial Class SignUpScreen
         Me.SigninBtn.AutoSize = True
         Me.SigninBtn.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SigninBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.SigninBtn.Location = New System.Drawing.Point(637, 555)
+        Me.SigninBtn.Location = New System.Drawing.Point(646, 556)
         Me.SigninBtn.Name = "SigninBtn"
-        Me.SigninBtn.Size = New System.Drawing.Size(320, 22)
+        Me.SigninBtn.Size = New System.Drawing.Size(299, 22)
         Me.SigninBtn.TabIndex = 28
-        Me.SigninBtn.Text = "Don't you have an account? Click Here." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.SigninBtn.Text = "Do you have an account? Click Here." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'SignUpButton
         '

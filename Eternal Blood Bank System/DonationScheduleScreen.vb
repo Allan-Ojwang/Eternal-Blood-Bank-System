@@ -24,6 +24,7 @@ Public Class DonationScheduleScreen
                 .ShowDialog()
             End With
             DisplayCurrentDate()
+
         End If
     End Sub
     Private Sub AddApointmentToF1Day(ByVal startDayAtF1Number As Integer)

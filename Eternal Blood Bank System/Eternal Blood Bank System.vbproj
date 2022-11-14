@@ -335,6 +335,19 @@
     <None Include="Assets\Blood B+.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\accept-dark.png" />
+    <None Include="Assets\add-dark.png" />
+    <None Include="Assets\donate-dark.png" />
+    <None Include="Assets\exit-dark.png" />
+    <None Include="Assets\logout-dark.png" />
+    <None Include="Assets\manage-dark.png" />
+    <None Include="Assets\records-dark.png" />
+    <None Include="Assets\request-dark.png" />
+    <None Include="Assets\schedule-dark.png" />
+    <None Include="Assets\set-dark.png" />
+    <None Include="Assets\add.png" />
+    <None Include="Assets\kisspng-blood-donation-blood-bank-charitable-organization-vector-blood-5a8769b794d4e3.2969423515188238636096.png" />
+    <None Include="Assets\kisspng-blood-donation-blood-bank-vector-hand-painted-drops-of-blood-heartbeat-5a82e063806694.2535243615185265635259.png" />
     <Content Include="Eternal.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

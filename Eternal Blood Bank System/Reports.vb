@@ -65,6 +65,11 @@
         PrintPreviewDialog1.ShowDialog()
     End Sub
 
+    Private Sub backBtn_Click(sender As Object, e As EventArgs) Handles backBtn.Click
+        Me.Hide()
+        AdminScreen.Show()
+    End Sub
+
     Private Sub DonationPrintButton_Click(sender As Object, e As EventArgs) Handles DonationPrintButton.Click
         DonationDoc.DefaultPageSettings.Landscape = True
         PrintPreviewDialog1.Document = DonationDoc
@@ -88,7 +93,5 @@
         AppointmentReportDataGridView.DrawToBitmap(bm, New Rectangle(20, 20, Me.AppointmentReportDataGridView.Width, Me.AppointmentReportDataGridView.Height))
         e.Graphics.DrawImage(bm, 0, 0)
     End Sub
-
-
 
 End Class

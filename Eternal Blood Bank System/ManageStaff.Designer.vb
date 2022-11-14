@@ -108,6 +108,7 @@ Partial Class ManageStaff
         '
         Me.StaffIDTb.BackColor = System.Drawing.SystemColors.Control
         Me.StaffIDTb.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.StaffIDTb.Enabled = False
         Me.StaffIDTb.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StaffIDTb.ForeColor = System.Drawing.Color.Black
         Me.StaffIDTb.HintForeColor = System.Drawing.Color.Black

@@ -77,6 +77,7 @@ Partial Class DonationAppointmentApprovalScreen
         Me.ApproveButton.ButtonText = "Approve"
         Me.ApproveButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ApproveButton.DisabledColor = System.Drawing.Color.Gray
+        Me.ApproveButton.Enabled = False
         Me.ApproveButton.Iconcolor = System.Drawing.Color.Transparent
         Me.ApproveButton.Iconimage = Nothing
         Me.ApproveButton.Iconimage_right = Nothing
@@ -114,6 +115,7 @@ Partial Class DonationAppointmentApprovalScreen
         Me.DisapproveButton.ButtonText = "Disapprove"
         Me.DisapproveButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DisapproveButton.DisabledColor = System.Drawing.Color.Gray
+        Me.DisapproveButton.Enabled = False
         Me.DisapproveButton.Iconcolor = System.Drawing.Color.Transparent
         Me.DisapproveButton.Iconimage = Nothing
         Me.DisapproveButton.Iconimage_right = Nothing
