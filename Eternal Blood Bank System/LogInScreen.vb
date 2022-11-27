@@ -43,6 +43,7 @@ Public Class LogInScreen
                     MessageBox.Show("Login Successfully as a staff")
                     Me.Hide()
                     AdminScreen.Show()
+                    AdminScreen.AddToolStripSplitButton.Visible = True
                     AdminScreen.ReportsToolStripSplitButton.Visible = False
                     AdminScreen.ManageToolStripSplitButton.Visible = False
 
