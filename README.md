@@ -19,5 +19,5 @@ The Blood Bank Management System seeks to improve the efficiency, accuracy, and 
 
 
 
-## 🛠 Skills
+## 🛠 Technology Used
 Visual basic
